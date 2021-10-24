@@ -10,12 +10,22 @@ public class PlayerScript : MonoBehaviour
     public float speed;
     public Text score;
     private int scoreValue = 0;
+    public GameObject winTextObject;
+    public GameObject loseTextObject;
+    private int livesValue = 3;
+    public Text lives;
+    public AudioSource musicSource;
+    public AudioClip soundEffect;
 
     // Start is called before the first frame update
     void Start()
     {
         rd2d = GetComponent<Rigidbody2D>();
         score.text = scoreValue.ToString();
+        lives.text = livesValue.ToString();
+        winTextObject.SetActive(false);
+        loseTextObject.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -34,7 +44,30 @@ public class PlayerScript : MonoBehaviour
             scoreValue += 1;
             score.text = scoreValue.ToString();
             Destroy(collision.collider.gameObject);
+            if(scoreValue == 4)
+            {
+                transform.position = new Vector2(45.0f, 0.0f);
+                livesValue = 3;
+            }
+            if(scoreValue == 8)
+            {
+                winTextObject.SetActive(true);
+                musicSource.clip = soundEffect;
+                musicSource.Play();
+                musicSource.loop = false;
+            }
+            
         }
+        if(collision.collider.tag == "Enemy")
+            {
+            livesValue -= 1;
+            lives.text = livesValue.ToString();
+            Destroy(collision.collider.gameObject);
+            if(livesValue == 0)
+            {
+                loseTextObject.SetActive(true);
+            }
+            }
     }
     void Update()
     {
@@ -50,7 +83,7 @@ public class PlayerScript : MonoBehaviour
         {
             if(Input.GetKey(KeyCode.W))
             {
-                rd2d.AddForce(new Vector2(0, 3), ForceMode2D.Impulse);
+                rd2d.AddForce(new Vector2(0, 4), ForceMode2D.Impulse);
             }
         }
     }

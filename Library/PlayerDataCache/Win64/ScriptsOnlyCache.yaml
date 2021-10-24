@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CameraScript
+    - PingPong2D
     - PlayerScript
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -12,6 +13,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
+    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
@@ -33,7 +35,6 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
-    - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
@@ -57,26 +58,30 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 598}
+      Script: {instanceID: 622}
     - Class: 114
-      Script: {instanceID: 1722}
+      Script: {instanceID: 2202}
     - Class: 114
-      Script: {instanceID: 2210}
+      Script: {instanceID: 2616}
     - Class: 114
-      Script: {instanceID: 2624}
+      Script: {instanceID: 2776}
     - Class: 114
-      Script: {instanceID: 2784}
+      Script: {instanceID: 2992}
     - Class: 114
-      Script: {instanceID: 3000}
+      Script: {instanceID: 3236}
     - Class: 114
-      Script: {instanceID: 3244}
+      Script: {instanceID: 4080}
     - Class: 114
-      Script: {instanceID: 22094}
+      Script: {instanceID: 4126}
     - Class: 114
-      Script: {instanceID: 27264}
+      Script: {instanceID: 24244}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -454,6 +459,18 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
+      Hash: 66bca5cc6a18c5298ec75235e56a84d6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraScript
+  - hash:
+      serializedVersion: 2
+      Hash: f7a3289ccb3393e98c51752bee0e58ba
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerScript
+  - hash:
+      serializedVersion: 2
       Hash: 87cef3c82381dc586f6772c3e27561b6
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.Experimental.U2D.Animation
@@ -622,18 +639,12 @@ ScriptsOnlyBuild:
     className: FabrikSolver2D
   - hash:
       serializedVersion: 2
-      Hash: ba8885765ad8fe055d2176fbae6efcd9
+      Hash: e08dc097b830ae769e9cdd9b04e903ac
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: PlayerScript
-  - hash:
-      serializedVersion: 2
-      Hash: 66bca5cc6a18c5298ec75235e56a84d6
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CameraScript
+    className: PingPong2D
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/seang/Desktop/Creation/Unity/Git Repositories/Tutorial 2/New
-    Unity Project/TestBuild/New Unity Project.exe
+  playerPath: C:/Users/seang/Desktop/Creation/Unity/Git Repositories/Tutorial 2/Gunter_Sean_DIG3480_Challenge2/New
+    Unity Project.exe
