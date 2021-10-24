@@ -69,19 +69,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2202}
     - Class: 114
-      Script: {instanceID: 2616}
+      Script: {instanceID: 2316}
     - Class: 114
-      Script: {instanceID: 2776}
+      Script: {instanceID: 2618}
     - Class: 114
-      Script: {instanceID: 2992}
+      Script: {instanceID: 2778}
     - Class: 114
-      Script: {instanceID: 3236}
+      Script: {instanceID: 2994}
     - Class: 114
-      Script: {instanceID: 4080}
+      Script: {instanceID: 3238}
     - Class: 114
-      Script: {instanceID: 4126}
+      Script: {instanceID: 4082}
     - Class: 114
-      Script: {instanceID: 24244}
+      Script: {instanceID: 4128}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -223,6 +223,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.PixelPerfect.dll
     namespaceName: UnityEngine.U2D
     className: CinemachinePixelPerfect
+  - hash:
+      serializedVersion: 2
+      Hash: e08dc097b830ae769e9cdd9b04e903ac
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PingPong2D
   - hash:
       serializedVersion: 2
       Hash: c1d728126ff1918728036c59106d32b2
@@ -637,12 +643,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
-  - hash:
-      serializedVersion: 2
-      Hash: e08dc097b830ae769e9cdd9b04e903ac
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PingPong2D
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

@@ -48,6 +48,7 @@ public class PlayerScript : MonoBehaviour
             {
                 transform.position = new Vector2(45.0f, 0.0f);
                 livesValue = 3;
+                lives.text = livesValue.ToString();
             }
             if(scoreValue == 8)
             {
